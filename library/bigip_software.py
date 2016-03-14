@@ -549,6 +549,7 @@ class BigIpCommon(object):
                 result['version'] = text
             elif elem.tag == 'buildNumber':
                 result['build'] = text
+        return result
 
     def flush(self):
         result = dict()
